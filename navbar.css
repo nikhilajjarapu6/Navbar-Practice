@@ -128,10 +128,11 @@ body {
 
 @media screen and (max-width:410px) {
     .nav-items {
+      display:absolute; 
         top: 71%; 
     }
 }
-@media screen and (min-width:420px) and (max-width:1020px) {
+@media screen and (min-width:1020px) {
     .nav-items {
        top:50%
     }
