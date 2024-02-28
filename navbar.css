@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap');
+
+body {
+   
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: tomato;
+    margin: 0%;
+}
+
+.section .section-bar {
+    background-color: white;
+    width: 350px;
+    height: 430px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.navbar {
+    display: flex;
+   justify-content: center;
+    align-items: center;
+}
+
+.nav-items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    width: 350px;
+    height: 70px;
+    position: absolute;
+    top: 78%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.nav-items li {
+    margin: 0 30px;
+    position: relative;/
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: black;
+    position: relative; 
+}
+
+.list i {
+    font-size: 26px;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+ 
+.activeIcon {
+    /* display: none; */
+    opacity: 0;
+    position: absolute; 
+    color:blueviolet;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.navbar ul li:hover .activeIcon{
+    opacity: 1;
+}
+
+.navbar ul li.active .activeIcon{
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+
+.navbar ul .indicator{
+    position: absolute;
+    bottom: -30px;
+    left: 32px;
+    height: 36px;
+    width: 50px;
+    background:tomato;
+    border-radius: 20%;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .section-bar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./pexels-emil-vierhaus-13920003.jpg);
+    background-size: cover;
+}
+
+.section-bar h3 {
+    display: flex;
+    z-index: 1;
+    color: tomato;
+    font-size: 25px;
+    margin-top: 0px;
+    margin: 0%;
+    padding: 5px 20px;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-bar div {
+    background-color: rgba(0, 0, 255, 0.062);
+    backdrop-filter: blur(10px);
+    width: 220px;
+    height: 40px;
+    position: absolute;
+    left: 13%;
+    margin: 0%;
+}
+
+
+
+
